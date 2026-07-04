@@ -1,3 +1,11 @@
+sudo update-alternatives --set gcc /usr/bin/gcc-8
+sudo update-alternatives --set g++ /usr/bin/g++-8
+sudo update-alternatives --set cpp /usr/bin/cpp-8
+
+gcc --version
+g++ --version
+cpp --version
+
 #sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
 #sudo update-java-alternatives -s java-1.11.0-openjdk-amd64
 #sudo update-java-alternatives -s java-1.17.0-openjdk-amd64
