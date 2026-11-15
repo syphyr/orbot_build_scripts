@@ -1,0 +1,17 @@
+gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+
+gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+
+gpgv --keyring ./tor.keyring tor-browser-android-aarch64-14.0.4.apk.asc tor-browser-android-aarch64-14.0.4.apk
+
+gpg --refresh-keys EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+
+gpg --keyserver keys.openpgp.org --search-keys EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+
+https://support.torproject.org/tbb/how-to-verify-signature/
+
+gpg --edit-key EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+
+trust
+5
+quit
